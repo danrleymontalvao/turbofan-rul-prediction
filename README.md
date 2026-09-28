@@ -22,12 +22,19 @@ Este projeto desenvolveu um pipeline ponta a ponta de *Machine Learning* sobre o
 
 NASA C-MAPSS (FD001)
 │
+
 ├──> 1. Pré-processamento e Limpeza (Remoção de 7 sensores constantes)
+
 ├──> 2. Preparação do Alvo (RUL linear com teto de 125 ciclos no treino)
+
 ├──> 3. Engenharia de Atributos (14 sensores × 6 estatísticas rolantes = 84 atributos)
+
 ├──> 4. Validação Cruzada sem Vazamento (GroupKFold por motor)
+
 ├──> 5. Otimização Bayesiana de Hiperparâmetros (Optuna - 100 trials por modelo)
+
 ├──> 6. Avaliação Assimétrica (RMSE, MAE e PHM Score)
+
 └──> 7. Interpretabilidade Global e Local (SHAP TreeExplainer)
 
 ### 1. Preparação dos Dados e Prevenção de Vazamento (*Data Leakage*)
@@ -94,9 +101,11 @@ git clone [https://github.com/seu-usuario/turbofan-rul-prediction.git](https://g
 cd turbofan-rul-prediction
 
 2. Crie e ative um ambiente virtual:
+
 python -m venv venv
 
 venv\Scripts\activate
 
 3. Instale as dependências:
+
 pip install -r requirements.txt
